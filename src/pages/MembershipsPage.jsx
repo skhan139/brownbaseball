@@ -35,7 +35,7 @@ function MembershipsPage() {
           <h3>Memberships</h3>
           <ul className="pricing-list">
             <li>
-              <span>Please Contact Us For Membership Information</span>
+              <span>Please Contact Us For Information</span>
             </li>
           </ul>
         </article>
