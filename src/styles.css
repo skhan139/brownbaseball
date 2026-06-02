@@ -70,7 +70,7 @@ a {
 
 .nav-bar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   gap: 10px;
 }
@@ -84,6 +84,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(0, 0, 0, 0.75);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .nav-link.active {
@@ -136,12 +137,27 @@ a {
   gap: 16px;
 }
 
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 .brand {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #14b8a6;
+  text-shadow:
+    0 0 0 #14b8a6,
+    1px 0 0 #14b8a6,
+    -1px 0 0 #14b8a6,
+    0 1px 0 #14b8a6,
+    0 -1px 0 #14b8a6;
 }
 
 .brand-subtitle,
@@ -159,6 +175,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  margin: 0;
 }
 
 .location-pin {
@@ -475,6 +492,13 @@ a {
   .header-right {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .nav-bar {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-logo {

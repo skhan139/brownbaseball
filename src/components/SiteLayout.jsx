@@ -13,10 +13,14 @@ function SiteLayout() {
       <header className="site-header">
         <div className="header-left">
           <NavLink className="nav-logo-link" to="/" aria-label="Brown Baseball home" end>
-            <img className="nav-logo" src="/images/brownbaseball.JPG" alt="Brown Baseball logo" />
+            <img
+              className="nav-logo"
+              src={`${import.meta.env.BASE_URL}images/brownbaseball.JPG`}
+              alt="Brown Baseball logo"
+            />
           </NavLink>
 
-          <div>
+          <div className="brand-row">
             <p className="brand">Brown Baseball</p>
             <p className="brand-subtitle">
               Myrtle Beach, South Carolina <span className="location-pin" aria-hidden="true">📍</span>

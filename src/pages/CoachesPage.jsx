@@ -8,7 +8,11 @@ function CoachesPage() {
         </div>
 
         <figure className="coach-feature coach-feature-top">
-          <img className="coach-photo" src="/images/brown.jpg" alt="Graham Brown" />
+          <img
+            className="coach-photo"
+            src={`${import.meta.env.BASE_URL}images/brown.jpg`}
+            alt="Graham Brown"
+          />
           <figcaption>Graham Brown, Minnesota Twins/CCU Baseball Alum</figcaption>
         </figure>
       </div>
@@ -27,7 +31,11 @@ function CoachesPage() {
         </article>
         <article className="info-card">
           <h3>Craig Rotruck</h3>
-          <img className="coach-card-photo" src="/images/craig.jpg" alt="Craig Rotruck" />
+          <img
+            className="coach-card-photo"
+            src={`${import.meta.env.BASE_URL}images/craig.jpg`}
+            alt="Craig Rotruck"
+          />
           <p>
             Craig Rotruck is a championship-level coach with decades of collegiate experience. As
             head baseball coach at WVU Potomac State, he posted a 113-26 record, won an NJCAA DII
@@ -40,7 +48,11 @@ function CoachesPage() {
         </article>
         <article className="info-card">
           <h3>Jack Billings</h3>
-          <img className="coach-card-photo" src="/images/billings.jpg" alt="Jack Billings" />
+          <img
+            className="coach-card-photo"
+            src={`${import.meta.env.BASE_URL}images/billings.jpg`}
+            alt="Jack Billings"
+          />
           <p>
             Jack Billings brings strong two-way college experience to the facility. Before Coastal
             Carolina, he starred at Rowan Gloucester as an NJCAA Division III All-American, going

@@ -13,14 +13,14 @@ function ContactPage() {
             contact information with your real business details later.
           </p>
           <ul className="contact-list">
-            <li>Email: info@brownbaseball.com</li>
+            <li>Email: brownbaseballmb@gmail.com</li>
             <li>Phone: (843) 295-0010</li>
             <li>Location: 209 Horsetail Moss CT, Myrtle Beach, SC 29588</li>
             <li>Hours: 3pm - 10pm, Monday - Friday, 9am-10pm, Saturday - Sunday </li>
             <li>Service Area: Youth through professional athletes</li>
           </ul>
         </div>
-        <a className="primary-btn" href="mailto:info@brownbaseball.com">
+        <a className="primary-btn" href="mailto:brownbaseballmb@gmail.com">
           Email Us
         </a>
       </div>

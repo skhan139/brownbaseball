@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const offerings = [
   {
     title: 'Batting Cages',
@@ -34,17 +36,20 @@ function HomePage() {
               high school, college, and professional baseball and softball players in Myrtle Beach. Being only fifteen minutes from the Ripken Experience in Myrtle Beach, we are one of the top options for your collegiate team, travel team, or high school team.
             </p>
             <div className="hero-actions">
-              <a className="primary-btn" href="/pricing">
+              <Link className="primary-btn" to="/pricing">
                 View Pricing
-              </a>
-              <a className="secondary-btn" href="/coaches">
+              </Link>
+              <Link className="secondary-btn" to="/coaches">
                 Meet Our Coaches
-              </a>
+              </Link>
             </div>
           </div>
 
           <figure className="hero-facility">
-            <img src="/images/indoor.JPG" alt="Brown Baseball facility exterior" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/indoor.JPG`}
+              alt="Brown Baseball facility exterior"
+            />
           </figure>
         </div>
       </header>
@@ -102,9 +107,9 @@ function HomePage() {
             Reach out to schedule batting cage time, facility training, or private lessons for your athlete or team.
           </p>
         </div>
-        <a className="primary-btn" href="/contact">
+        <Link className="primary-btn" to="/contact">
           Contact Brown Baseball
-        </a>
+        </Link>
       </section>
     </>
   )
