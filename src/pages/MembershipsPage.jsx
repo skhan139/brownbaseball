@@ -27,8 +27,7 @@ function MembershipsPage() {
           <h3>Team Rates</h3>
           <ul className="pricing-list">
             <li>
-              <span>2 Hour Team Practice (5 Cages)</span>
-              <span>$350</span>
+              <span>Please Contact Us For Inquiries</span>
             </li>
           </ul>
         </article>
@@ -36,16 +35,7 @@ function MembershipsPage() {
           <h3>Memberships</h3>
           <ul className="pricing-list">
             <li>
-              <span>1 Month</span>
-              <span>$400 (Can Add Gym)</span>
-            </li>
-            <li>
-              <span>3 Months</span>
-              <span>$1,150 (Can Add Gym)</span>
-            </li>
-            <li>
-              <span>6 Months</span>
-              <span>$2,000 (Can Add Gym)</span>
+              <span>Please Contact Us For Membership Information</span>
             </li>
           </ul>
         </article>
