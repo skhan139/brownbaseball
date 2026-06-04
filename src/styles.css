@@ -397,6 +397,10 @@ a {
   gap: 20px;
 }
 
+.coaches-note {
+  color: #ffffff;
+}
+
 .coach-feature {
   margin: 12px 0 0;
   display: grid;
@@ -438,6 +442,10 @@ a {
   padding-left: 18px;
   color: rgba(243, 246, 251, 0.78);
   line-height: 1.8;
+}
+
+.contact-list a {
+  text-decoration: underline;
 }
 
 .cta-link:hover,

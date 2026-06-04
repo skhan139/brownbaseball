@@ -5,6 +5,8 @@ function CoachesPage() {
         <div className="section-heading">
           <span>Train With The Pros</span>
           <h2>Instruction built around fundamentals, confidence, and performance.</h2>
+          <br/> <br/>
+          <p className="coaches-note">Other Instructors to be announced soon!</p>
         </div>
 
         <figure className="coach-feature coach-feature-top">
@@ -41,9 +43,7 @@ function CoachesPage() {
             head baseball coach at WVU Potomac State, he posted a 113-26 record, won an NJCAA DII
             National Championship, and was named 1995 NJCAA DII Coach of the Year. He later led
             Potomac State softball to a 142-31 record, four Region 20 titles, and three NJCAA DII
-            World Series appearances. Craig is the only head coach in NJCAA history to take a men's athletic team and women's athletic team to a Junior College World Series. As a player, Rotruck was one of Frostburg State's top power
-            hitters, finishing with 24 career home runs, a .333 career batting average, and a standout
-            1990 season that earned All-South Regional recognition and All-American honorable mention. In 2009 Rotruck was the 160th inductee into the Frostburg State Atheltic Hall Of Fame
+            World Series appearances. Craig is the only head coach in NJCAA history to take a men's athletic team and women's athletic team to a Junior College World Series. As a player, Rotruck was an All American Catcher from the Frostburg State University Baseball Team. In 2009 Rotruck was the 160th inductee into the Frostburg State Atheltic Hall Of Fame
           </p>
         </article>
         <article className="info-card">
