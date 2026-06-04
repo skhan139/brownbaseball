@@ -68,6 +68,24 @@ a {
   gap: 12px;
 }
 
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 0.62rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
 .nav-bar {
   display: flex;
   flex-wrap: nowrap;
@@ -493,20 +511,56 @@ a {
 @media (max-width: 640px) {
   .site-header {
     width: min(100% - 20px, 1120px);
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
+    padding: 14px;
   }
 
-  .header-right {
+  .header-left {
     width: 100%;
     justify-content: space-between;
   }
 
+  .brand-row {
+    gap: 6px;
+  }
+
+  .brand {
+    font-size: 1.22rem;
+  }
+
+  .brand-subtitle {
+    letter-spacing: 0.08em;
+    font-size: 0.66rem;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .header-right {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-right.open {
+    display: flex;
+  }
+
   .nav-bar {
     width: 100%;
-    justify-content: flex-start;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    justify-content: stretch;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: center;
   }
 
   .nav-logo {
@@ -525,6 +579,11 @@ a {
     border-radius: 20px;
   }
 
+  .hero-content {
+    gap: 18px;
+    padding-top: 20px;
+  }
+
   .topbar {
     flex-direction: column;
     align-items: flex-start;
@@ -532,5 +591,41 @@ a {
 
   .hero-copy h1 {
     font-size: clamp(2.4rem, 12vw, 4rem);
+    max-width: 100%;
+  }
+
+  .hero-copy p,
+  .section-copy,
+  .info-card p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .primary-btn,
+  .hero-actions .secondary-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header {
+    width: min(100% - 12px, 1120px);
+    padding: 12px;
+  }
+
+  .page-shell {
+    width: min(100% - 12px, 1120px);
+  }
+
+  .hero,
+  .section,
+  .contact-panel,
+  .info-card {
+    padding: 16px;
+    border-radius: 16px;
   }
 }
